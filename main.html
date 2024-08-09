@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale="1.0">
+        <title>Happy Sweets</title>
+        <link rel ="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+        <h1>Happy Sweets</h1>
+        <h2>Choose your next treat here:</h2>
+        <p>Enjoy our classic or seasonal treats</p>
+        
+        <div class="dropdown">
+            <button class="dropButton">Sweet Choice</button>
+            <div class="dropdown-content">
+              <a href="Classic.html">Classic treats</a>
+              <a href="Seasonal.html">Seasonal treats</a>
+            </div>
+          </div>
+
+          <div class="contactForm">
+            <p><br><br><br>Have a question?<br>Send us a message</p>
+                <form action="#" class="form">
+                    <input required type="text" name="name" placeholder="Name" class="form_input">
+                    <br/>
+                    <input  name="email" placeholder="E-mail" class="form_input">
+                    <br/>
+                    <textarea required name ="message" placeholder="Message" class="form_input_message"></textarea>
+                    <br/>
+                    <button class="form_button" type="submit">Send</button>
+                </form>
+            </div>
+
+            <p>Or contact us another way</p>
+            <div class ="contactTable">
+                <table>
+                    <tr>
+                    <th>Address</th>
+                    <th>Email</th> 
+                    <th>Telegram</th>
+                  </tr>
+                  <tr>
+                    <td>Sunny Street</td>
+                    <td>Sweet@gmail.com</td>
+                    <td>SweetDreams</td>
+                  </tr>
+                </table>
+            </div>
+
+            <p>Hours of Operation</p>
+                <table class ="hoursTable">
+                    <tr>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                    <tr>
+                    <td>Closed</td>
+                    <td>8am-5pm</td>
+                    <td>8am-5pm</td>
+                    <td>8am-5pm</td>
+                    <td>8am-5pm</td>
+                    <td>8am-7pm</td>
+                    <td>8am-7pm</td>
+                    </tr>
+                </table>
+            <hr>
+            <form action>
+                <div class="loginContainer">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required></br>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Enter Password" name="psw" required>
+              
+                  <button type="submit">Login</button></br>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+              
+                <div class="cancelFormContainer">
+                  <button type="button" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a style="color:rgb(116, 62, 62)" href="#">password?</a></span>
+                </div>
+              </form>
+              <hr>
+    <p><i>“Everyone smiles in the same language.” — George Carlin</i></p>
+    </div>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
